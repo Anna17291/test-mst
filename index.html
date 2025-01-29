@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Awsome website</title>
+  <meta name="keywords" content="Test, recrutement, job, hire-me">
+  <meta name="description" content="Adaptive site for MST company">
+  <link rel="preload" href="fonts/Prata-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="page-header">
+      <div class="page-header__container">
+        <nav class="page-header__nav">
+          <div class="page-header__mob-toggles">
+            <a href="#" class="page-header__link">
+              <img class="page-header__logo" src="images/logo.svg" width="160" height="31" alt="Awsome website logo.">
+            </a>
+            <button class="page-header__toggle page-header__toggle--opened">
+              <span class="visually-hidden">Открыть навигацию.</span>
+            </button>
+            <button class="page-header__close-toggle">
+              <span class="visually-hidden">Открыть навигацию.</span>
+            </button>
+          </div>
+          <div class="page-header__menu">
+            <ul class="page-header__list">
+              <li class="page-header__item">
+                <a class="page-header__nav-link" href="#">About</a>
+              </li>
+              <li class="page-header__item">
+                <a class="page-header__nav-link" href="#">Catalog</a>
+              </li>
+              <li class="page-header__item">
+                <a class="page-header__nav-link" href="#">Gallery</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="page-main">
+      <section class="hero">
+        <h1 class="visually-hidden">About a company</h1>
+        <div class="hero__container container">
+          <div class="hero__text showing">
+            <h2 class="showing__header">We create happiness</h2>
+            <h3 class="showing__description">for everyone</h3>
+            <ul class="showing__list">
+              <li class="showing__item">
+                <img class="showing__icon" src="images/mark.svg" width="39" height="37" alt="List item mark.">
+                <p class="showing__point">waste&nbsp;
+                  <span class="showing__number"> $10 000 </span>
+                  &nbsp;
+                </p>
+              </li>
+              <li class="showing__item">
+                <img class="showing__icon" src="images/mark.svg" width="39" height="37" alt="List item mark.">
+                <p class="showing__point">be happy for<span class="showing__number">&nbsp;30&nbsp;
+                  </span>
+                  seconds </p>
+              </li>
+              <li class="showing__item">
+                <img class="showing__icon" src="images/mark.svg" width="39" height="37" alt="List item mark.">
+                <p class="showing__point">you're&nbsp;
+                  <span class="showing__number">100%</span>&nbsp;
+                  genious
+                </p>
+              </li>
+            </ul>
+            <button class="showing__button button button--main">Order</button>
+          </div>
+          <img class="hero__image" src="images/main-image.jpg" width="763" height="1009" alt="Product image.">
+        </div>
+      </section>
+      <section class="advantages">
+        <h2 class="visually-hidden">advantages</h2>
+        <div class="advantages__container container">
+          <img class="advantages__image advantages__image--first" src="images/prod1.jpg" width="622" height="724"
+            alt="Product image.">
+          <div class="advantages__text advantages-text">
+            <ul class="advantages-text__list">
+              <li class="advantages-text__item">
+                <img class="advantages-text__mark" src="images/advantage-mark.svg" width="58" height="47"
+                  alt="Advantages mark image.">
+                <p class="advantages-text__text">All you have to do is press "Order", then pay and go away, please </p>
+              </li>
+              <li class="advantages-text__item">
+                <img class="advantages-text__mark" src="images/advantage-mark.svg" width="58" height="47"
+                  alt="Advantages mark image.">
+                <p class="advantages-text__text">If you consider to refuse we don't care </p>
+              </li>
+              <li class="advantages-text__item">
+                <img class="advantages-text__mark" src="images/advantage-mark.svg" width="58" height="47"
+                  alt="Advantages mark image.">
+                <p class="advantages-text__text">Never read user manual.<br>Do not even try  </p>
+              </li>
+              <li class="advantages-text__item">
+                <img class="advantages-text__mark" src="images/advantage-mark.svg" width="58" height="47"
+                  alt="Advantages mark image.">
+                <p class="advantages-text__text">Enjoy the consumption </p>
+              </li>
+            </ul>
+            <button class="advantages-text__button button button--main">Order</button>
+          </div>
+          <img class="advantages__image advantages__image--second" src="images/prod2.jpg" width="589" height="724"
+            alt="List item mark.">
+        </div>
+      </section>
+      <section class="form">
+        <h2 class="visually-hidden">form</h2>
+        <div class="form__container container">
+          <form action="#" method="post" class="form__userform">
+            <fieldset class="form__fieldset">
+              <legend class="form__header">Let us send you<br>some spam </legend>
+              <ul class="form__list">
+                <li class="form__item">
+                  <label class="form__label">
+                    <input class="form__input" type="text" name="user-name" placeholder="Name" required>
+                  </label>
+                </li>
+                <li class="form__item">
+                  <label class="form__label">
+                    <input class="form__input" type="email" name="user-email" placeholder="E-mail" required>
+                  </label>
+                </li>
+              </ul>
+              <label class="form__checkbox-label">
+                <input class="form__checkbox" type="checkbox" name="submit" id="form-checkbox" required>
+                <span class="form__checkbox-mark"></span>
+                <span class="form__checkbox-text">I agree you're awsome</span>
+              </label>
+            </fieldset>
+            <button class="form__button button button--secondary" type="submit">Submit form</button>
+          </form>
+          <img class="form__image" width="600" height="628" src="images/form-image.jpg"
+            alt="Picture of a specialist."></img>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container ">
+        <section class="additional">
+          <div class="additional__container container">
+            <nav class="additional__nav">
+              <ul class="additional__list">
+                <li class="additional__item">
+                  <a class="additional__nav-link" href="#">About us</a>
+                </li>
+                <li class="additional__item">
+                  <a class="additional__nav-link" href="#">Link to pay</a>
+                </li>
+                <li class="additional__item">
+                  <a class="additional__nav-link" href="#">Link to go away</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </section>
+        <section class="footer__nav footer-nav">
+          <div class="footer-nav__container container">
+            <nav class="footer-nav__nav">
+              <a href="#" class="footer-nav__link">
+                <img class="footer-nav__logo" src="images/logo-footer.svg" width="256" height="53"
+                  alt="Awsome website logo.">
+              </a>
+              <ul class="footer-nav__list">
+                <li class="footer-nav__item">
+                  <a class="footer-nav__social-link" href="#">
+                    <img class="footer-nav__social-icon" src="images/social/inst.svg" width="32" height="32">
+                  </a>
+                </li>
+                <li class="footer-nav__item">
+                  <a class="footer-nav__social-link" href="#">
+                    <img class="footer-nav__social-icon" src="images/social/tt.svg" width="32" height="32">
+                  </a>
+                </li>
+                <li class="footer-nav__item">
+                  <a class="footer-nav__social-link" href="#">
+                    <img class="footer-nav__social-icon" src="images/social/li.svg" width="32" height="32">
+                  </a>
+                </li>
+                <li class="footer-nav__item">
+                  <a class="footer-nav__social-link" href="#">
+                    <img class="footer-nav__social-icon" src="images/social/fb.svg" width="32" height="32">
+                  </a>
+                </li>
+                <li class="footer-nav__item">
+                  <a class="footer-nav__social-link" href="#">
+                    <img class="footer-nav__social-icon" src="images/social/tme.svg" width="32" height="32">
+                  </a>
+                </li>
+                <li class="footer-nav__item">
+                  <a class="footer-nav__social-link" href="#">
+                    <img class="footer-nav__social-icon" src="images/social/ytb.svg" width="32" height="32">
+                  </a>
+                </li>
+              </ul>
+              <button class="footer-nav__button button button--main">Order</button>
+            </nav>
+          </div>
+        </section>
+        <section class="footer__terms footer-terms">
+          <div class="footer-terms__container container">
+            <div class="footer-terms__block">&copy; 2024, Copyright.</div>
+            <a href="#" class="footer-terms__block footer-terms__block--link">Privacy policy</a>
+            <a href="#" class="footer-terms__block footer-terms__block--link">Terms of Use</a>
+          </div>
+        </section>
+      </div>
+    </footer>
+  </div>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
