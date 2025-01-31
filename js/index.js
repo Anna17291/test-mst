@@ -15,14 +15,14 @@ const openNavigation = () => {
   page.style.overflow = 'hidden';
   navCloseToggle.addEventListener('click', closeNavigation);
   navToggle.removeEventListener('click', openNavigation);
-
-  window.addEventListener('resize', () => {
-    if (breakpoint.matches) {
-      closeNavigation()
-    }
-  });
-
+  window.addEventListener('resize', changeSize);
   overlay.addEventListener('click', closeNavigation)
+}
+
+const changeSize = () => {
+  if (breakpoint.matches) {
+    closeNavigation()
+  }
 }
 
 const closeNavigation = () => {
@@ -35,6 +35,8 @@ const closeNavigation = () => {
   page.style.overflow = 'auto';
   navCloseToggle.removeEventListener('click', closeNavigation);
   navToggle.addEventListener('click', openNavigation);
+  window.removeEventListener('resize', changeSize);
+  overlay.removeEventListener('click', closeNavigation)
 }
 
 const openCloseNavigation = () => {
