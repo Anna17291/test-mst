@@ -3,6 +3,7 @@ let navToggle = document.querySelector('.page-header__toggle');
 let navCloseToggle = document.querySelector('.page-header__close-toggle');
 let page = document.querySelector('body');
 const breakpoint = window.matchMedia('(min-width: 981px)');
+let overlay = document.querySelector('.page-header__overlay');
 
 const openNavigation = () => {
   navMain.classList.add('page-header__menu--opened');
@@ -20,6 +21,8 @@ const openNavigation = () => {
       closeNavigation()
     }
   });
+
+  overlay.addEventListener('click', closeNavigation)
 }
 
 const closeNavigation = () => {
