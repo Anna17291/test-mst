@@ -15,7 +15,27 @@
   }
 }
 
+.form__userform::before {
+  position: absolute;
+  content: "";
+  background-image: url("../../images/form-after.png");
+  background-repeat: no-repeat;
+  top: -4vw;
+  right: -14vw;
+  width: 18vw;
+  height: 18vw;
+
+  opacity: 1;
+  display: block;
+  background-size: 10vw 10vw;
+
+  @media (max-width: 1023px) {
+    display: none;
+  }
+}
+
 .form__userform {
+  position: relative;
   background-color: #ffffff;
   padding: 72px 60px 72px 134px;
   box-sizing: border-box;
@@ -134,12 +154,10 @@
   border-bottom-right-radius: 30px;
   object-fit: cover;
 
-
   @media (max-width: 1023px) {
     display: none;
   }
 }
-
 
 .form__label {
   position: relative;
